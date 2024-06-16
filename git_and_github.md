@@ -81,7 +81,7 @@ git checkout <branch name>
 ```sh
 git checkout -b <new branch name>
 ```
-==}> to delete branch
+> to delete branch
 ```sh
 git branch -d <branch name>
 ```
