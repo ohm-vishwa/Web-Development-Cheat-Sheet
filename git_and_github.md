@@ -1,83 +1,83 @@
 ## Configuring Git
-==}> see configuration
+> see configuration
 ```sh
 git config --list
 ```
-==}> set user name
+> set user name
 ```sh
 git config --global user.name "ohm_vishwa"
 ```
-==}> set email
+>set email
 ```sh
 git config --global user.email "example@email.com"
 ```
 
 ## Basic Commands
-==}> initialzing git
+> initialzing git
 ```sh
 git init
 ```
-==}> clone github repo
+> clone github repo
 ```sh
 git clone <url>
 ```
-==}> view files
+> view files
 ```sh
 ls
 ```
-==}> view hidden files
+> view hidden files
 ```sh
 ls -la
 ```
-==}> check status
+> check status
 ```sh
 git status
 ```
-==}> staging single file
+> staging single file
 ```sh
 git add <file name>
 ```
-==}> staging all files
+> staging all files
 ```sh
 git add .
 ```
-==}> commit to git
+> commit to git
 ```sh
 git commit -m "message"
 ```
-==}> add & commit togther 
+> add & commit togther 
 ```sh
 git commit -am "message"
 ```
-==}> push code on github repo (Once)
+> push code on github repo (Once)
 ```sh
 git push -u origin main
 ```
-==}> after `-u origin main` 
+> after `-u origin main` 
 ```sh
 git push
 ```
-==}> add remote repo 
+> add remote repo 
 ```sh
 git remote add origin <url>
 ```
-==}> verify remote
+> verify remote
 ```sh
 git remote -v
 ```
-==}> check branch
+> check branch
 ```sh
 git branch
 ```
-==}> to rename branch
+> to rename branch
 ```sh
 git branch -M main
 ```
-==}> to navigate
+> to navigate
 ```sh
 git checkout <branch name>
 ```
-==}> to create new branch
+> to create new branch
 ```sh
 git checkout -b <new branch name>
 ```
