@@ -1,55 +1,55 @@
 ## Configuring Git
-> see configuration
+> to see configuration
 ```sh
 git config --list
 ```
-> set user name
+> to set user name
 ```sh
 git config --global user.name "ohm_vishwa"
 ```
->set email
+> to set email
 ```sh
 git config --global user.email "example@email.com"
 ```
 
 ## Basic Commands
-> initialzing git
+> to initialze git
 ```sh
 git init
 ```
-> clone github repo
+> to clone github repo
 ```sh
 git clone <url>
 ```
-> view files
+> to view files
 ```sh
 ls
 ```
-> view hidden files
+> to view hidden files
 ```sh
 ls -la
 ```
-> check status
+> to check status
 ```sh
 git status
 ```
-> staging single file
+> to staging single file
 ```sh
 git add <file name>
 ```
-> staging all files
+> to staging all files
 ```sh
 git add .
 ```
-> commit to git
+> to commit on git
 ```sh
 git commit -m "message"
 ```
-> add & commit togther 
+> to add & commit togther 
 ```sh
 git commit -am "message"
 ```
-> push code on github repo (Once)
+> to push code on github repo (Once)
 ```sh
 git push -u origin main
 ```
@@ -57,15 +57,15 @@ git push -u origin main
 ```sh
 git push
 ```
-> add remote repo 
+> to add remote repo 
 ```sh
 git remote add origin <url>
 ```
-> verify remote
+> to verify remote
 ```sh
 git remote -v
 ```
-> check branch
+> to check branch
 ```sh
 git branch
 ```
@@ -84,4 +84,44 @@ git checkout -b <new branch name>
 > to delete branch
 ```sh
 git branch -d <branch name>
+```
+> to push other branch
+```sh
+git push --set-upstream origin <branch name>
+```
+> to compare commits, branches, files & more
+```sh
+git diff <branch name>
+```
+> to merge 2 branches or create pull request
+```sh
+git merge <branch name>
+```
+> to feth & dawnload content from a remote repo to local repo
+```sh
+git pull origin main
+```
+> to view all commit 
+```sh
+git log
+```
+> to remove staged changes
+```sh
+git reset <file name>
+```
+or,
+```sh
+git reset
+```
+> to restore commited changes (for one commit)
+```sh
+git reset HEAD~1
+```
+> to restore commited changes (for many commits) using `git log`
+```sh
+git reset <commit hash>
+```
+or,
+```sh
+git commit --hard <commit hash>
 ```
