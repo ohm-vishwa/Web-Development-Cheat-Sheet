@@ -13,7 +13,7 @@ git config --global user.email "example@email.com"
 ```
 
 ## Basic Commands
-> to initialze git
+> to initialize git
 ```sh
 git init
 ```
