@@ -4,3 +4,5 @@
   - ## [HTML Refrence](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/)
 
 - ## [CSS Refrence](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
+- ## [Javascript Important Terms & Methods](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md)
