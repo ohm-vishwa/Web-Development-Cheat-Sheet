@@ -225,7 +225,7 @@ console.log(alphabets);
 ```
 
 > [!NOTE]
-> .slice() ` doesn't changes ` original array but,\
+> .slice() ` doesn't change ` original array but,\
 > .splice() ` changes ` original array
 
 > ### .sort()
