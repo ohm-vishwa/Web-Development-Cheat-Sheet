@@ -7,7 +7,7 @@
 
 - #### [Javascript Important Terms & Methods](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md)
 
-## My Contribution in last year
+## My Contribution in the last year
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ohm-vishwa/ohm-vishwa/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ohm-vishwa/ohm-vishwa/output/github-contribution-grid-snake.svg">
