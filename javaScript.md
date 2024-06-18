@@ -1,13 +1,35 @@
 # Javascript Important Terms & Methods
 
-> ## Template Literal `${ }`
+### String Methods
+- [trim()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#trim)
+- [toUpperCase()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#tolowercase)
+- [indexOf()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#indexof)
+- [slice()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#slice)
+- [replace()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#replace)
+- [repeat()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#repeat)
+  
+### Array Methods
+- [push()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#push-add-to-end)
+- [pop()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#pop-delete-from-end)
+- [unshift()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#unshift-add-to-front)
+- [shift](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#shift-delete-from-front)
+- [indexOf()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#indexof-1)
+- [include()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#includes)
+- [concat()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#concat)
+- [reverse()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#reverse)
+- [slice()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#slice-1)
+- [splice()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#splice)
+- [sort()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#sort)
+   
+
+> ### Template Literal `${ }`
 ```js
 let amount = 100;
 console.log(`I have ${amount} rupees.`);
 // Output => I have 100 rupees.
 ```
 
-> ## .length
+> ### .length
 ```js
 let str = "Hello";
 let arr = [str, "i", "am", "ohm"];
@@ -17,9 +39,9 @@ console.log(arr.length);
 //Output => 4
 ```
 
-## String Methods
+### String Methods
 
-> ## .trim()
+> ### .trim()
 
 > [!NOTE]
 > it removes front & back spaces from string.\
@@ -36,7 +58,7 @@ console.log(newStr);
 > [!NOTE]
 > Strings are immutable in JavaScript.
 
-> ## .toLowerCase()
+> ### .toLowerCase()
 ```js
 let str = "OHM";
 let newStr = str.toLowerCase();
@@ -44,7 +66,7 @@ console.log(newStr);
 // Output => ohm
 ```
 
-> ## .toUpperCase()
+> ### .toUpperCase()
 ```js
 let str = "ohm";
 let newStr = str.toUpperCase();
@@ -52,7 +74,7 @@ console.log(newStr);
 // Output => OHM
 ```
 
-> ## .indexOf()
+> ### .indexOf()
 ```js
 //   index 012345678..
 let str = "ILoveCoding";
@@ -66,7 +88,7 @@ console.log(str.indexOf("b"));
 > starting index is ` inclusive ` but,\
 > ending index is ` exclusive `.
 
-> ## .slice()
+> ### .slice()
 ```js
 //   index 012345678..
 let str = "ILoveCoding";
@@ -78,7 +100,7 @@ console.log(str.slice(-3));
 // Output => ing
 ```
 
-> ## .replace()
+> ### .replace()
 ```js
 let str = "ILoveCoding";
 let newStr = str.replace("Love", "Do");
@@ -86,7 +108,7 @@ console.log(newStr);
 // Output => IDoCoding
 ```
 
-> ## .repeat()
+> ### .repeat()
 ```js
 let str = "Hello";
 let newStr = str.repeat(3);
@@ -98,7 +120,7 @@ console.log(newStr);
 
 # Array Methods
 
-> ## .push() ` add to end `
+> ### .push() ` add to end `
 ```js
 let arr = ['a', 'b', 'c'];
 arr.push('d');
@@ -106,7 +128,7 @@ console.log(arr);
 // Output => [ 'a', 'b', 'c', 'd' ]
 ```
 
-> ## .pop(); ` delete from end `
+> ### .pop(); ` delete from end `
 ```js
 let arr = ['a', 'b', 'c'];
 arr.pop();
@@ -114,7 +136,7 @@ console.log(arr);
 // Output => [ 'a', 'b' ]
 ```
 
-> ## .unshift() ` add to front `
+> ### .unshift() ` add to front `
 ```js
 let arr = ['w', 'y', 'z'];
 arr.unshift('a');
@@ -122,7 +144,7 @@ console.log(arr);
 // Output => [ 'a', 'w', 'y', 'z' ]
 ```
 
-> ## .shift() ` delete from front `
+> ### .shift() ` delete from front `
 ```js 
 let arr = ['w', 'y', 'z'];
 arr.shift();
@@ -130,14 +152,14 @@ console.log(arr);
 // Output => [ 'y', 'z' ]
 ```
 
-> ## .indexOf()
+> ### .indexOf()
 ```js
 let arr = ['red', 'blue', 'green'];
 console.log(arr.indexOf("blue"));
 // Output => 1
 ```
 
-> ## .includes()
+> ### .includes()
 ```js
 let arr = ['red', 'blue', 'green'];
 console.log(arr.includes('red'));
@@ -146,7 +168,7 @@ console.log(arr.includes('yellow'));
 // Output => false
 ```
 
-> ## .concat()
+> ### .concat()
 ```js
 let primary = ['red', 'blue'];
 let secondary = ['yellow', 'orange', 'green'];
@@ -155,7 +177,7 @@ console.log(newArr);
 // Output => [ 'red', 'blue', 'yellow', 'orange', 'green' ]
 ```
 
-> ## .reverse()
+> ### .reverse()
 ```js
 let arr = ['yellow', 'orange', 'green'];
 arr.reverse();
@@ -163,7 +185,7 @@ console.log(arr);
 // Output => [ 'green', 'orange', 'yellow' ]
 ```
 
-> ## .slice()
+> ### .slice()
 ```js
 let arr = [ 'red', 'blue', 'yellow', 'orange', 'green' ];
 let newArr = arr.slice( 1 , 3); // (start index, end index)
@@ -183,7 +205,7 @@ console.log(newArr);
 > starting index is ` inclusive ` but,\
 > ending index is ` exclusive `.
 
- > ## .splice()
+ > ### .splice()
 ```js
 //       index :  0   1   2   3   4   5     
 let alphabets = ['a','b','c','d','e','f'];
@@ -206,7 +228,7 @@ console.log(alphabets);
 > .slice() ` doesn't changes ` original array but,\
 > .splice() ` changes ` original array
 
-> ## .sort()
+> ### .sort()
 ```js
 let fruits = ['pineApple', 'banana', 'apple', 'coconut'];
 fruits.sort();
