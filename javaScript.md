@@ -9,6 +9,7 @@
 - [repeat()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#repeat)
   
 ### Array Methods
+- [for( of )]
 - [push()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#push-add-to-end)
 - [pop()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#pop-delete-from-end)
 - [unshift()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#unshift-add-to-front)
@@ -20,7 +21,30 @@
 - [slice()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#slice-1)
 - [splice()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#splice)
 - [sort()](https://github.com/ohm-vishwa/Web-Development/blob/main/javaScript.md#sort)
-   
+
+> [!IMPORTANT] 
+> ` const array = newArray; `\
+> we can't assign new array refrence to **array**. \
+> but, we can perform all Array operations inside it.\
+> 
+> ` let array = newArray; ` \
+> it makes refrence of assigned array.\
+> change in one array reflect in both
+> 
+> these cases are same with ` object `.
+
+> ### for( of )
+```js
+let arr = ['red', 'green', 'blue'];
+const newArr = [];
+let i = 0;
+
+for(color of arr){       // (variableName of array / string)
+    newArr[i++] = color; // right way to make array clone
+}
+console.log(newArr);
+// Output => [ 'red', 'green', 'blue' ]
+```
 
 > ### Template Literal `${ }`
 ```js
@@ -234,4 +258,47 @@ let fruits = ['pineApple', 'banana', 'apple', 'coconut'];
 fruits.sort();
 console.log(fruits);
 // Output => [ 'apple', 'banana', 'coconut', 'pineApple' ]
+```
+
+# Math Object Important Properties & methods
+
+```js
+console.log(Math.random()); // generate random number between [0 , 1)
+
+let arr = [1,2,3,34,6,56,4,3];
+console.log(Math.max(...arr)); //reutrn largest number
+// Output => 56
+
+console.log(Math.min(2,1,3,2)); // return smallest number
+// Output => 1
+
+console.log(Math.abs(-5.3)); // gives +ve value
+// Output => 5.3
+
+console.log(Math.pow(2,3)); // power function
+// Output => 8
+
+console.log(Math.sqrt(9)); // square root function
+// Output => 3
+
+console.log(Math.cbrt(27)); // cube root
+// Output => 3
+
+console.log(Math.floor(2.34)); // floor function
+// Output => 2
+
+console.log(Math.ceil(3.2)); // ceiling function
+// Output => 4
+
+console.log(Math.PI); // value of PI
+// Output => 3.141592653589793
+
+console.log(Math.log2(34)); // log 2 base 2
+// Output => 5.087462841250339
+
+console.log(Math.LOG2E); // value of log 2 base e
+// Output => 1.4426950408889634
+
+console.log(Math.LOG10E); // value of log 10 base e
+// Output => 0.4342944819032518
 ```
