@@ -39,7 +39,7 @@
 > these cases are same with ` object `.
 
 > ### ` ... ` Operator uses
-```js
+```javascript
 const arr1 = [1, 2, 3];
 const arr2 = [...arr1, 4, 5, 6];    // Spreading an Array
 console.log(arr2); 
@@ -80,7 +80,7 @@ console.log(combined);
 ```
 
 > ### Template Literal `${ }`
-```js
+```javascript
 let amount = 100;
 console.log(`I have ${amount} rupees.`);
 // Output => I have 100 rupees.
@@ -90,21 +90,28 @@ console.log(`I have ${amount} rupees.`);
 
 > [!IMPORTANT]
 > In JavaScript, the ` this ` keyword is a special identifier that refers to the context in which the current code is executing.
+> 
+> ` this ` with <u>Normal Function</u>  ` scope --> calling object `\
+> ` this ` with <u>Arrow Function</u> ` scope --> parent scope `
 
-```js
+```javascript
 console.log(this); // In a browser: Window, In Node.js: global
 
 const obj = {
   value: 42,
   getValue: function() {
-    return this.value;
+    return this.value; // scope --> obj
+  },
+  getValue2 : () => {
+    return this.value; // parent`s scope --> Window
   }
 };
 console.log(obj.getValue()); // 42
+console.log(obj.getValue2()); // undefined
 ```
 
 > ### .length
-```js
+```javascript
 let str = "Hello";
 let arr = [str, "i", "am", "ohm"];
 console.log(str.length);
@@ -113,21 +120,8 @@ console.log(arr.length);
 //Output => 4
 ```
 
-> ### for( of ) loop
-```js
-let arr = ['red', 'green', 'blue'];
-const newArr = [];
-let i = 0;
-
-for(color of arr){       // (variableName of array / string)
-    newArr[i++] = color; // right way to make array clone
-}
-console.log(newArr);
-// Output => [ 'red', 'green', 'blue' ]
-```
-
 > ### try & catch
-```js
+```javascript
 try {
   // Code that may throw an exception
 } catch (error) {
@@ -137,114 +131,31 @@ try {
 }
 ```
 
-> ### Arrow Function ` => ` or, ` () => {} `
-```js
-const func = () => {
-  // function body
+> ### Arrow Function ` () => {} ` vs Regular function
+```javascript
+// Regular function
+function name(params) {
+// function body
 };
+
+// Arrow function
+const add = (a, b) => a + b;
+
+const func = () => {
+// function body
+};
+
+// inside class
+const myClass = { 
+   getName2 : () => {
+  // function body 
+  }
+};
+
+const square = x => x * x;
+
+const nestedFunction = x => y => x + y;
 ```
-
-> ### setTimeout()
-```js
-setTimeout(() => {
-    console.log('too kaise hai aap log.');
-},2000);    // execute after 2 sec
-console.log('Hello guies,');
-
-// Hello guies,
-// too kaise hai aap log.  [after 2 sec]
-```
-
-> ### setTnterval() & clearInterval()
-```js
-let id = setInterval(() => {    // continuously executing until we stoped using clearInterval(id)
-    console.log('too kaise hai aap log.');
-},1000);    // 1sec interval
-console.log('Hello guies');
-// Hello guies
-// too kaise hai aap log.  [in 1 sec interval 4 times]
-
-setTimeout(() => {
-    clearInterval(id);  // terminate setInterval()
-},4000);    // execute after 4 sec
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### String Methods
 
@@ -255,7 +166,7 @@ setTimeout(() => {
 > it can't changes original string.\
 > it can't remove middle spaces.
 
-```js
+```javascript
 let str = "   ohm vishwa    ";
 let newStr = str.trim();
 console.log(newStr);
@@ -266,7 +177,7 @@ console.log(newStr);
 > Strings are immutable in JavaScript.
 
 > ### .toLowerCase()
-```js
+```javascript
 let str = "OHM";
 let newStr = str.toLowerCase();
 console.log(newStr);
@@ -274,7 +185,7 @@ console.log(newStr);
 ```
 
 > ### .toUpperCase()
-```js
+```javascript
 let str = "ohm";
 let newStr = str.toUpperCase();
 console.log(newStr);
@@ -282,7 +193,7 @@ console.log(newStr);
 ```
 
 > ### .indexOf()
-```js
+```javascript
 //   index 012345678..
 let str = "ILoveCoding";
 console.log(str.indexOf("Love"));
@@ -296,7 +207,7 @@ console.log(str.indexOf("b"));
 > ending index is ` exclusive `.
 
 > ### .slice()
-```js
+```javascript
 //   index 012345678..
 let str = "ILoveCoding";
 console.log(str.slice(5));
@@ -308,7 +219,7 @@ console.log(str.slice(-3));
 ```
 
 > ### .replace()
-```js
+```javascript
 let str = "ILoveCoding";
 let newStr = str.replace("Love", "Do");
 console.log(newStr);
@@ -316,7 +227,7 @@ console.log(newStr);
 ```
 
 > ### .repeat()
-```js
+```javascript
 let str = "Hello";
 let newStr = str.repeat(3);
 console.log(newStr);
@@ -328,7 +239,7 @@ console.log(newStr);
 # Array Methods
 
 > ### .push() ` add to end `
-```js
+```javascript
 let arr = ['a', 'b', 'c'];
 arr.push('d');
 console.log(arr);
@@ -336,7 +247,7 @@ console.log(arr);
 ```
 
 > ### .pop(); ` delete from end `
-```js
+```javascript
 let arr = ['a', 'b', 'c'];
 arr.pop();
 console.log(arr);
@@ -344,7 +255,7 @@ console.log(arr);
 ```
 
 > ### .unshift() ` add to front `
-```js
+```javascript
 let arr = ['w', 'y', 'z'];
 arr.unshift('a');
 console.log(arr);
@@ -352,7 +263,7 @@ console.log(arr);
 ```
 
 > ### .shift() ` delete from front `
-```js 
+```javascript 
 let arr = ['w', 'y', 'z'];
 arr.shift();
 console.log(arr);
@@ -360,14 +271,14 @@ console.log(arr);
 ```
 
 > ### .indexOf()
-```js
+```javascript
 let arr = ['red', 'blue', 'green'];
 console.log(arr.indexOf("blue"));
 // Output => 1
 ```
 
 > ### .includes()
-```js
+```javascript
 let arr = ['red', 'blue', 'green'];
 console.log(arr.includes('red'));
 // Output => true
@@ -376,7 +287,7 @@ console.log(arr.includes('yellow'));
 ```
 
 > ### .concat()
-```js
+```javascript
 let primary = ['red', 'blue'];
 let secondary = ['yellow', 'orange', 'green'];
 let newArr = primary.concat(secondary);
@@ -385,7 +296,7 @@ console.log(newArr);
 ```
 
 > ### .reverse()
-```js
+```javascript
 let arr = ['yellow', 'orange', 'green'];
 arr.reverse();
 console.log(arr);
@@ -393,7 +304,7 @@ console.log(arr);
 ```
 
 > ### .slice()
-```js
+```javascript
 let arr = [ 'red', 'blue', 'yellow', 'orange', 'green' ];
 let newArr = arr.slice( 1 , 3); // (start index, end index) end index is excluded
 console.log(newArr);
@@ -413,7 +324,7 @@ console.log(newArr);
 > ending index is ` exclusive `.
 
  > ### .splice()
-```js
+```javascript
 //       index :  0   1   2   3   4   5     
 let alphabets = ['a','b','c','d','e','f'];
 alphabets.splice(2,3,'x','y','z'); // (start index,delete count,insert)
@@ -442,7 +353,7 @@ console.log(alphabets);
 > .splice() ` changes ` original array
 
 > ### .sort()
-```js
+```javascript
 let fruits = ['pineApple', 'banana', 'apple', 'coconut'];
 fruits.sort();
 console.log(fruits);
@@ -451,7 +362,7 @@ console.log(fruits);
 
 # Math Object Important Properties & methods
 
-```js
+```javascript
 console.log(Math.random()); // generate random number between [0 , 1)
 
 let arr = [1,2,3,34,6,56,4,3];
@@ -492,3 +403,69 @@ console.log(Math.LOG10E); // value of log 10 base e
 // Output => 0.4342944819032518
 ```
 
+> # Higher Order Functions & Callback Functions
+
+> ### for (of) vs ForEach()
+```javascript
+const arr = [1, 2, 3, 4, 5, 6, 7];
+// forEach function
+arr.forEach(el => {
+    console.log(el); // print all array elements
+});
+
+// for (of) function
+for (el of arr){
+    console.log(el); // print all array elements
+};
+
+const arrClass = [{
+    name: 'ohm',
+    roll: 1
+},
+{
+    name: 'Abhishek',
+    roll: 2
+},
+{
+    name: 'jay Prakash',
+    roll: 3
+}]
+
+// forEach function
+arrClass.forEach((el) => {
+    console.log(el.name); // print all obejcts name
+    console.log(el.roll); // print all obejcts roll
+});
+
+// for (of) function
+for (el of arrClass){
+    console.log(el.name); // print all obejcts name
+    console.log(el.roll); // print all obejcts roll
+}
+```
+
+
+> ### setTimeout()
+```javascript
+setTimeout(() => {
+    console.log('too kaise hai aap log.');
+},2000);    // execute after 2 sec
+console.log('Hello guies,');
+
+// Hello guies,
+// too kaise hai aap log.  [after 2 sec]
+```
+
+> ### setTnterval() & clearInterval()
+```javascript
+let id = setInterval(() => {    // continuously executing until we stoped using clearInterval(id)
+    console.log('too kaise hai aap log.');
+},1000);    // 1sec interval
+console.log('Hello guies');
+// Hello guies
+// too kaise hai aap log.  [in 1 sec interval 4 times]
+
+setTimeout(() => {
+    clearInterval(id);  // terminate setInterval()
+},4000);    // execute after 4 sec
+```
