@@ -61,6 +61,10 @@ git push
 ```sh
 git remote add origin <url>
 ```
+> to set new url
+```sh
+git remote set-url origin <url>
+```
 > to verify remote
 ```sh
 git remote -v
