@@ -1,4 +1,4 @@
-## Configuring Git
+# Git & Github Commands
 
 > ## see configuration
 ```sh
