@@ -1,68 +1,68 @@
 ## Configuring Git
 
-> ## to see configuration
+> ## see configuration
 ```sh
 git config --list
 ```
 
-> ## to set user name
+> ## set user name
 ```sh
 git config --global user.name "ohm_vishwa"
 ```
 
-> ## to set email
+> ## set email
 ```sh
 git config --global user.email "example@email.com"
 ```
 
 ## Basic Commands
 
-> ## to initialize git
+> ## initialize git
 ```sh
 git init
 ```
 
-> ## to clone github repo
+> ## clone github repo
 ```sh
 git clone <url>
 ```
 
-> ## to view files
+> ## view files
 ```sh
 ls
 ```
 
-> ## to view hidden files
+> ## view hidden files
 ```sh
 ls -la
 ```
 
-> ## to check status
+> ## check status
 ```sh
 git status
 ```
 
-> ## to staging single file
+> ## staging single file
 ```sh
 git add <file name>
 ```
 
-> ## to staging all files
+> ## staging all files
 ```sh
 git add .
 ```
 
-> ## to commit on git
+> ## commit on git
 ```sh
 git commit -m "message"
 ```
 
-> ## to add & commit togther 
+> ## add & commit togther 
 ```sh
 git commit -am "message"
 ```
 
-> ## to push code on github repo (Once)
+> ## push code on github repo (Once)
 ```sh
 git push -u origin main
 ```
@@ -72,74 +72,74 @@ git push -u origin main
 git push
 ```
 
-> ## to verify remote
+> ## verify remote
 ```sh
 git remote -v
 ```
 
-> ## to add remote repo 
+> ## add remote repo 
 ```sh
 git remote add origin <url>
 ```
 
-> ## to set new url
+> ## set new url
 ```sh
 git remote set-url origin <url> 
 ```
 
-> ## to check branch
+> ## check branch
 ```sh
 git branch
 ```
 
-> ## to rename branch
+> ## rename branch
 ```sh
 git branch -M main
 ```
 
-> ## to navigate
+> ## navigate
 ```sh
-git checkout <branch name>
+git checkout <branch_name>
 ```
 
-> ## to create new branch
+> ## create new branch
 ```sh
-git checkout -b <new branch name> 
+git checkout -b <new_branch_name> 
 ```
 
-> ## to delete branch
+> ## delete branch
 ```sh
-git branch -d <branch name>
+git branch -d <branch_name>
 ```
 
-> ## to push other branch
+> ## push other branch
 ```sh
-git push --set-upstream origin <branch name>
+git push --set-upstream origin <branch_name>
 ```
 
-> ## to compare commits, branches, files & more
+> ## compare commits, branches, files & more
 ```sh
-git diff <branch name>
+git diff <branch_name>
 ```
 
-> ## to merge 2 branches or create pull request
+> ## merge 2 branches or create pull request
 ```sh
-git merge <branch name>
+git merge <branch_name>
 ```
 
-> ## to feth & dawnload content from a remote repo to local repo
+> ## feth & dawnload content from a remote repo local repo
 ```sh
 git pull origin main
 ```
 
-> ## to view all commit 
+> ## view all commit 
 ```sh
 git log
 ```
 
-> ## to remove staged changes
+> ## remove staged changes
 ```sh
-git reset <file name>
+git reset <file_name>
 ```
 
 or,
@@ -147,17 +147,17 @@ or,
 git reset
 ```
 
-> ## to restore commited changes (for one commit)
+> ## restore commited changes (for one commit)
 ```sh
 git reset HEAD~1
 ```
 
-> ## to restore commited changes (for many commits) using `git log`
+> ## restore commited changes (for many commits) using `git log`
 ```sh
-git reset <commit hash>
+git reset <commit_hash>
 ```
 
 or,
 ```sh
-git commit --hard <commit hash> 
+git commit --hard <commit_hash> 
 ```
