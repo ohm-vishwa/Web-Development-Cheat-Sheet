@@ -1,6 +1,7 @@
 # Javascript Important Terms & Methods
 
 ### String Methods
+
 - [trim()](https://github.com/ohm-vishwa/Web-Dev-Cheat-Sheet/blob/main/javaScript.md#trim)
 - [toUpperCase()](https://github.com/ohm-vishwa/Web-Dev-Cheat-Sheet/blob/main/javaScript.md#tolowercase)
 - [indexOf()](https://github.com/ohm-vishwa/Web-Dev-Cheat-Sheet/blob/main/javaScript.md#indexof)
@@ -9,7 +10,8 @@
 - [repeat()](https://github.com/ohm-vishwa/Web-Dev-Cheat-Sheet/blob/main/javaScript.md#repeat)
   
 ### Array Methods
-- [for( of )]
+
+- [for( of )](https://github.com/ohm-vishwa/Web-Dev-Cheat-Sheet/blob/main/javaScript.md#for-of-)
 - [push()](https://github.com/ohm-vishwa/Web-Dev-Cheat-Sheet/blob/main/javaScript.md#push-add-to-end)
 - [pop()](https://github.com/ohm-vishwa/Web-Dev-Cheat-Sheet/blob/main/javaScript.md#pop-delete-from-end)
 - [unshift()](https://github.com/ohm-vishwa/Web-Dev-Cheat-Sheet/blob/main/javaScript.md#unshift-add-to-front)
@@ -22,10 +24,13 @@
 - [splice()](https://github.com/ohm-vishwa/Web-Dev-Cheat-Sheet/blob/main/javaScript.md#splice)
 - [sort()](https://github.com/ohm-vishwa/Web-Dev-Cheat-Sheet/blob/main/javaScript.md#sort)
 
+### [Math Object](https://github.com/ohm-vishwa/Web-Dev-Cheat-Sheet/blob/main/javaScript.md#math-object-important-properties--methods)
+
+
 > [!IMPORTANT] 
 > ` const array = newArray; `\
 > we can't assign new array refrence to **array**. \
-> but, we can perform all Array operations inside it.\
+> but, we can perform all Array operations inside it.
 > 
 > ` let array = newArray; ` \
 > it makes refrence of assigned array.\
@@ -33,7 +38,82 @@
 > 
 > these cases are same with ` object `.
 
-> ### for( of )
+> ### ` ... ` Operator uses
+```js
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1, 4, 5, 6];    // Spreading an Array
+console.log(arr2); 
+// Output => [1, 2, 3, 4, 5, 6]
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { ...obj1, c: 3 }; // Spreading an Object
+console.log(obj2);
+// Output => { a: 1, b: 2, c: 3 }
+
+const numbers = [1, 2, 3];
+const sum = (a, b, c) => a + b + c;
+console.log(sum(...numbers)); // Function Arguments
+// Output => 6 
+
+function sum(...args) {    // Function Definition
+  return args.reduce((acc, curr) => acc + curr, 0);
+}
+console.log(sum(1, 2, 3, 4));
+// Output => 10
+
+const original = [1, 2, 3];
+const copy = [...original]; // Copying Arrays
+console.log(copy);
+// Output => [1, 2, 3]
+
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const combined = [...array1, ...array2]; // Concatenating Arrays
+console.log(combined);
+// Output => [1, 2, 3, 4, 5, 6]
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { b: 3, c: 4 };
+const combined = { ...obj1, ...obj2 }; // Combining Objects
+console.log(combined); 
+// Output => { a: 1, b: 3, c: 4 }
+```
+
+> ### Template Literal `${ }`
+```js
+let amount = 100;
+console.log(`I have ${amount} rupees.`);
+// Output => I have 100 rupees.
+```
+
+> ### ` this ` keyword
+
+> [!IMPORTANT]
+> In JavaScript, the ` this ` keyword is a special identifier that refers to the context in which the current code is executing.
+
+```js
+console.log(this); // In a browser: Window, In Node.js: global
+
+const obj = {
+  value: 42,
+  getValue: function() {
+    return this.value;
+  }
+};
+console.log(obj.getValue()); // 42
+```
+
+> ### .length
+```js
+let str = "Hello";
+let arr = [str, "i", "am", "ohm"];
+console.log(str.length);
+//Output => 5
+console.log(arr.length);
+//Output => 4
+```
+
+> ### for( of ) loop
 ```js
 let arr = ['red', 'green', 'blue'];
 const newArr = [];
@@ -46,22 +126,125 @@ console.log(newArr);
 // Output => [ 'red', 'green', 'blue' ]
 ```
 
-> ### Template Literal `${ }`
+> ### try & catch
 ```js
-let amount = 100;
-console.log(`I have ${amount} rupees.`);
-// Output => I have 100 rupees.
+try {
+  // Code that may throw an exception
+} catch (error) {
+  // Code to handle the exception
+} finally {
+  // Code that will always run, regardless of an exception (optional)
+}
 ```
 
-> ### .length
+> ### Arrow Function ` => ` or, ` () => {} `
 ```js
-let str = "Hello";
-let arr = [str, "i", "am", "ohm"];
-console.log(str.length);
-//Output => 5
-console.log(arr.length);
-//Output => 4
+const func = () => {
+  // function body
+};
 ```
+
+> ### setTimeout()
+```js
+setTimeout(() => {
+    console.log('too kaise hai aap log.');
+},2000);    // execute after 2 sec
+console.log('Hello guies,');
+
+// Hello guies,
+// too kaise hai aap log.  [after 2 sec]
+```
+
+> ### setTnterval() & clearInterval()
+```js
+let id = setInterval(() => {    // continuously executing until we stoped using clearInterval(id)
+    console.log('too kaise hai aap log.');
+},1000);    // 1sec interval
+console.log('Hello guies');
+// Hello guies
+// too kaise hai aap log.  [in 1 sec interval 4 times]
+
+setTimeout(() => {
+    clearInterval(id);  // terminate setInterval()
+},4000);    // execute after 4 sec
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### String Methods
 
@@ -212,7 +395,7 @@ console.log(arr);
 > ### .slice()
 ```js
 let arr = [ 'red', 'blue', 'yellow', 'orange', 'green' ];
-let newArr = arr.slice( 1 , 3); // (start index, end index)
+let newArr = arr.slice( 1 , 3); // (start index, end index) end index is excluded
 console.log(newArr);
 // Output => [ 'blue', 'yellow' ]
 
@@ -233,14 +416,20 @@ console.log(newArr);
 ```js
 //       index :  0   1   2   3   4   5     
 let alphabets = ['a','b','c','d','e','f'];
+alphabets.splice(2,3,'x','y','z'); // (start index,delete count,insert)
+console.log(alphabets);
+// Output => [ 'a', 'b', 'x', 'y', 'z', 'f']
+
+let alphabets = ['a','b','c','d','e','f'];
+alphabets.splice(2,3); // (start index,delete count)
+console.log(alphabets);
+// Output => [ 'a', 'b','f']
+
+alphabets = ['a','b','c','d','e','f'];
 alphabets.splice(3); // (start index) delete all after index
 console.log(alphabets);
 // Output => [ 'a', 'b', 'c' ]
 
-alphabets = ['a','b','c','d','e','f'];
-alphabets.splice(2,3); // (start index,delete count)
-console.log(alphabets);
-// Output => [ 'a', 'b','f']
 
 alphabets = ['a','b','c','d','e','f'];
 alphabets.splice(1,3,'g','h','i'); // (start index,delete count,insert,...)
@@ -302,3 +491,4 @@ console.log(Math.LOG2E); // value of log 2 base e
 console.log(Math.LOG10E); // value of log 10 base e
 // Output => 0.4342944819032518
 ```
+
