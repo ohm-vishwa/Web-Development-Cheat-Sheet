@@ -1,31 +1,19 @@
 # Javascript Important Terms & Methods
 
-### String Methods
-
-- [trim()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#trim)
-- [toUpperCase()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#tolowercase)
-- [indexOf()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#indexof)
-- [slice()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#slice)
-- [replace()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#replace)
-- [repeat()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#repeat)
-  
-### Array Methods
-
-- [for( of )](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#for-of-)
-- [push()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#push-add-to-end)
-- [pop()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#pop-delete-from-end)
-- [unshift()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#unshift-add-to-front)
-- [shift](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#shift-delete-from-front)
-- [indexOf()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#indexof-1)
-- [include()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#includes)
-- [concat()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#concat)
-- [reverse()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#reverse)
-- [slice()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#slice-1)
-- [splice()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#splice)
-- [sort()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#sort)
-
-### [Math Object](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#math-object-important-properties--methods)
-
+| Terms  | String Methods | Array Methods | Higher Order Functions |
+| -----  | -------------- | ------------- | ---------------------- |
+||[trim()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#trim)               |[for( of )](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#for-of-)              ||
+||[toUpperCase()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#tolowercase) |[push()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#push-add-to-end)         ||
+||[indexOf()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#indexof)         |[pop()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#pop-delete-from-end)      ||
+||[slice()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#slice)             |[unshift()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#unshift-add-to-front) ||
+||[replace()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#replace)         |[shift](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#shift-delete-from-front)  ||
+||[repeat()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#repeat)           |[indexOf()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#indexof-1)            ||
+||                                                                                                    |[include()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#includes)             ||
+||                                                                                                    |[concat()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#concat)                ||
+||                                                                                                    |[reverse()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#reverse)              ||
+||                                                                                                    |[slice()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#slice-1)                ||
+||                                                                                                    |[splice()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#splice)                ||
+||                                                                                                    |[sort()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#sort)                    ||
 
 > [!IMPORTANT] 
 > ` const array = newArray; `\
