@@ -5,7 +5,7 @@
 
 - #### [CSS Refrence](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
-- #### [Javascript Important Terms & Methods](https://github.com/ohm-vishwa/Web-Dev-Cheat-Sheet/blob/main/javaScript.md)
+- #### [Javascript Important Terms & Methods](/javaScript.md)
 
 ---
 ## [View My GitHub Profile](https://github.com/ohm-vishwa) 
