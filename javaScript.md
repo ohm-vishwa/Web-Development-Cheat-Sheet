@@ -1,22 +1,22 @@
 # Javascript Important Terms & Methods
 
-| Terms  | String Methods | Array Methods | Higher Order Functions |
-| -----  | -------------- | ------------- | ---------------------- |
-||[trim()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#trim)               |[for( of )](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#for-of-)              ||
-||[toUpperCase()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#tolowercase) |[push()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#push-add-to-end)         ||
-||[indexOf()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#indexof)         |[pop()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#pop-delete-from-end)      ||
-||[slice()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#slice)             |[unshift()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#unshift-add-to-front) ||
-||[replace()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#replace)         |[shift](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#shift-delete-from-front)  ||
-||[repeat()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#repeat)           |[indexOf()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#indexof-1)            ||
-||                                                                                                    |[include()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#includes)             ||
-||                                                                                                    |[concat()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#concat)                ||
-||                                                                                                    |[reverse()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#reverse)              ||
-||                                                                                                    |[slice()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#slice-1)                ||
-||                                                                                                    |[splice()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#splice)                ||
-||                                                                                                    |[sort()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#sort)                    ||
+| Terms  | String Methods | Array Methods | Higher Order Functions | Math Object |
+| -----  | -------------- | ------------- | ---------------------- | -----------
+||[trim()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#trim)               |[for( of )](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#for-of-)              |||
+||[toUpperCase()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#tolowercase) |[push()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#push-add-to-end)         |||
+||[indexOf()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#indexof)         |[pop()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#pop-delete-from-end)      |||
+||[slice()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#slice)             |[unshift()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#unshift-add-to-front) |||
+||[replace()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#replace)         |[shift](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#shift-delete-from-front)  |||
+||[repeat()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#repeat)           |[indexOf()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#indexof-1)            |||
+||                                                                                                    |[include()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#includes)             |||
+||                                                                                                    |[concat()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#concat)                |||
+||                                                                                                    |[reverse()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#reverse)              |||
+||                                                                                                    |[slice()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#slice-1)                |||
+||                                                                                                    |[splice()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#splice)                |||
+||                                                                                                    |[sort()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#sort)                    |||
 
 
-
+# Terms
 > ### Spread Operator ` ... ` 
 ```js
 const arr1 = [1, 2, 3];
@@ -162,7 +162,7 @@ const square = x => x * x;
 const nestedFunction = x => y => x + y;
 ```
 
-### String Methods
+# String Methods
 
 > ### trim()
 
@@ -376,45 +376,70 @@ console.log(fruits);
 // Output => [ 'apple', 'banana', 'coconut', 'pineApple' ]
 ```
 
-# Math Object Important Properties & methods
-
+## Math Object Important Properties & methods
+> Math.random()
 ```js
-console.log(Math.random()); // generate random number between [0 , 1)
-
+console.log(Math.random()); 
+// generate random number between [0 , 1)
+```
+> Math.max()
+```js
 let arr = [1,2,3,34,6,56,4,3];
 console.log(Math.max(...arr)); //reutrn largest number
 // Output => 56
-
+```
+> Math.min()
+```js
 console.log(Math.min(2,1,3,2)); // return smallest number
 // Output => 1
-
+```
+> Math.abs()
+```js
 console.log(Math.abs(-5.3)); // gives +ve value
 // Output => 5.3
-
+```
+> Math.pow()
+```js
 console.log(Math.pow(2,3)); // power function
 // Output => 8
-
+```
+> Math.sqrt()
+```js
 console.log(Math.sqrt(9)); // square root function
 // Output => 3
-
+```
+> Math.cbrt()
+```js
 console.log(Math.cbrt(27)); // cube root
 // Output => 3
-
+```
+> Math.floor()
+```js
 console.log(Math.floor(2.34)); // floor function
 // Output => 2
-
+```
+> Math.celi()
+```js
 console.log(Math.ceil(3.2)); // ceiling function
 // Output => 4
-
+```
+> Math.PI
+```js
 console.log(Math.PI); // value of PI
 // Output => 3.141592653589793
-
+```
+> Math.log2()
+```js
 console.log(Math.log2(34)); // log 2 base 2
 // Output => 5.087462841250339
-
+```
+> Math.LOG2E
+```js
 console.log(Math.LOG2E); // value of log 2 base e
 // Output => 1.4426950408889634
-
+```
+> Math.LOG10E
+```js
 console.log(Math.LOG10E); // value of log 10 base e
 // Output => 0.4342944819032518
 ```
