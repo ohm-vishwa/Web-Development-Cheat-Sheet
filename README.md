@@ -11,7 +11,7 @@
 
 
 
-  - #### [Git & Github Commands](https://github.com/ohm-vishwa/Git-Github-Commands)
+- #### [Git & Github Commands](https://github.com/ohm-vishwa/Git-Github-Commands)
 ---
 ## [View My GitHub Profile](https://github.com/ohm-vishwa) 
 ## [Keep Supporting on YouTube](https://www.youtube.com/@ohm_vishwa)
