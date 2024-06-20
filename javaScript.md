@@ -38,7 +38,7 @@
 > 
 > these cases are same with ` object `.
 
-> ### ` ... ` Operator uses
+> ### ` ... ` Spread
 ```js
 const arr1 = [1, 2, 3];
 const arr2 = [...arr1, 4, 5, 6];    // Spreading an Array
@@ -497,4 +497,17 @@ console.log(arr2.some((el) => (el % 3 == 0)));
 let arr3 = [1, 2, 4, 5, 7];
 console.log(arr3.some((el) => (el % 3 == 0)));
 // OutPut => false
+```
+> [!NOTE]
+> ` every() ` works as **logical And**\
+> ` some() ` works as **logical Or**
+
+> ### reduce()
+```js
+let num = [1, 2, 3, 4];
+let finalValue = num.reduce((res,el) => { // (accumulator,element)
+    return res + el;
+});
+console.log(finalValue);
+// Output => 10
 ```
