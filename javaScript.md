@@ -55,12 +55,6 @@ const sum = (a, b, c) => a + b + c;
 console.log(sum(...numbers)); // Function Arguments
 // Output => 6 
 
-function sum(...args) {    // Function Definition
-  return args.reduce((acc, curr) => acc + curr, 0);
-}
-console.log(sum(1, 2, 3, 4));
-// Output => 10
-
 const original = [1, 2, 3];
 const copy = [...original]; // Copying Arrays
 console.log(copy);
