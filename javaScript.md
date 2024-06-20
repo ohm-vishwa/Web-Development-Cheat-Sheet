@@ -39,7 +39,7 @@
 > these cases are same with ` object `.
 
 > ### ` ... ` Operator uses
-```javascript
+```js
 const arr1 = [1, 2, 3];
 const arr2 = [...arr1, 4, 5, 6];    // Spreading an Array
 console.log(arr2); 
@@ -80,7 +80,7 @@ console.log(combined);
 ```
 
 > ### Template Literal `${ }`
-```javascript
+```js
 let amount = 100;
 console.log(`I have ${amount} rupees.`);
 // Output => I have 100 rupees.
@@ -92,9 +92,9 @@ console.log(`I have ${amount} rupees.`);
 > In JavaScript, the ` this ` keyword is a special identifier that refers to the context in which the current code is executing.
 > 
 > ` this ` with <u>Normal Function</u>  ` scope --> calling object `\
-> ` this ` with <u>Arrow Function</u> ` scope --> parent scope `
+> ` this ` with <u>Arrow Function</u> ` scope --> parent's scope `
 
-```javascript
+```js
 console.log(this); // In a browser: Window, In Node.js: global
 
 const obj = {
@@ -110,8 +110,8 @@ console.log(obj.getValue()); // 42
 console.log(obj.getValue2()); // undefined
 ```
 
-> ### .length
-```javascript
+> ### length
+```js
 let str = "Hello";
 let arr = [str, "i", "am", "ohm"];
 console.log(str.length);
@@ -121,7 +121,7 @@ console.log(arr.length);
 ```
 
 > ### try & catch
-```javascript
+```js
 try {
   // Code that may throw an exception
 } catch (error) {
@@ -132,7 +132,7 @@ try {
 ```
 
 > ### Arrow Function ` () => {} ` vs Regular function
-```javascript
+```js
 // Regular function
 function name(params) {
 // function body
@@ -159,14 +159,14 @@ const nestedFunction = x => y => x + y;
 
 ### String Methods
 
-> ### .trim()
+> ### trim()
 
 > [!NOTE]
 > it removes front & back spaces from string.\
 > it can't changes original string.\
 > it can't remove middle spaces.
 
-```javascript
+```js
 let str = "   ohm vishwa    ";
 let newStr = str.trim();
 console.log(newStr);
@@ -176,24 +176,24 @@ console.log(newStr);
 > [!NOTE]
 > Strings are immutable in JavaScript.
 
-> ### .toLowerCase()
-```javascript
+> ### toLowerCase()
+```js
 let str = "OHM";
 let newStr = str.toLowerCase();
 console.log(newStr);
 // Output => ohm
 ```
 
-> ### .toUpperCase()
-```javascript
+> ### toUpperCase()
+```js
 let str = "ohm";
 let newStr = str.toUpperCase();
 console.log(newStr);
 // Output => OHM
 ```
 
-> ### .indexOf()
-```javascript
+> ### indexOf()
+```js
 //   index 012345678..
 let str = "ILoveCoding";
 console.log(str.indexOf("Love"));
@@ -206,8 +206,8 @@ console.log(str.indexOf("b"));
 > starting index is ` inclusive ` but,\
 > ending index is ` exclusive `.
 
-> ### .slice()
-```javascript
+> ### slice()
+```js
 //   index 012345678..
 let str = "ILoveCoding";
 console.log(str.slice(5));
@@ -218,16 +218,16 @@ console.log(str.slice(-3));
 // Output => ing
 ```
 
-> ### .replace()
-```javascript
+> ### replace()
+```js
 let str = "ILoveCoding";
 let newStr = str.replace("Love", "Do");
 console.log(newStr);
 // Output => IDoCoding
 ```
 
-> ### .repeat()
-```javascript
+> ### repeat()
+```js
 let str = "Hello";
 let newStr = str.repeat(3);
 console.log(newStr);
@@ -238,47 +238,47 @@ console.log(newStr);
 
 # Array Methods
 
-> ### .push() ` add to end `
-```javascript
+> ### push() ` add to end `
+```js
 let arr = ['a', 'b', 'c'];
 arr.push('d');
 console.log(arr);
 // Output => [ 'a', 'b', 'c', 'd' ]
 ```
 
-> ### .pop(); ` delete from end `
-```javascript
+> ### pop(); ` delete from end `
+```js
 let arr = ['a', 'b', 'c'];
 arr.pop();
 console.log(arr);
 // Output => [ 'a', 'b' ]
 ```
 
-> ### .unshift() ` add to front `
-```javascript
+> ### unshift() ` add to front `
+```js
 let arr = ['w', 'y', 'z'];
 arr.unshift('a');
 console.log(arr);
 // Output => [ 'a', 'w', 'y', 'z' ]
 ```
 
-> ### .shift() ` delete from front `
-```javascript 
+> ### shift() ` delete from front `
+```js 
 let arr = ['w', 'y', 'z'];
 arr.shift();
 console.log(arr);
 // Output => [ 'y', 'z' ]
 ```
 
-> ### .indexOf()
-```javascript
+> ### indexOf()
+```js
 let arr = ['red', 'blue', 'green'];
 console.log(arr.indexOf("blue"));
 // Output => 1
 ```
 
-> ### .includes()
-```javascript
+> ### includes()
+```js
 let arr = ['red', 'blue', 'green'];
 console.log(arr.includes('red'));
 // Output => true
@@ -286,8 +286,8 @@ console.log(arr.includes('yellow'));
 // Output => false
 ```
 
-> ### .concat()
-```javascript
+> ### concat()
+```js
 let primary = ['red', 'blue'];
 let secondary = ['yellow', 'orange', 'green'];
 let newArr = primary.concat(secondary);
@@ -295,16 +295,16 @@ console.log(newArr);
 // Output => [ 'red', 'blue', 'yellow', 'orange', 'green' ]
 ```
 
-> ### .reverse()
-```javascript
+> ### reverse()
+```js
 let arr = ['yellow', 'orange', 'green'];
 arr.reverse();
 console.log(arr);
 // Output => [ 'green', 'orange', 'yellow' ]
 ```
 
-> ### .slice()
-```javascript
+> ### slice()
+```js
 let arr = [ 'red', 'blue', 'yellow', 'orange', 'green' ];
 let newArr = arr.slice( 1 , 3); // (start index, end index) end index is excluded
 console.log(newArr);
@@ -323,8 +323,8 @@ console.log(newArr);
 > starting index is ` inclusive ` but,\
 > ending index is ` exclusive `.
 
- > ### .splice()
-```javascript
+ > ### splice()
+```js
 //       index :  0   1   2   3   4   5     
 let alphabets = ['a','b','c','d','e','f'];
 alphabets.splice(2,3,'x','y','z'); // (start index,delete count,insert)
@@ -352,8 +352,8 @@ console.log(alphabets);
 > .slice() ` doesn't change ` original array but,\
 > .splice() ` changes ` original array
 
-> ### .sort()
-```javascript
+> ### sort()
+```js
 let fruits = ['pineApple', 'banana', 'apple', 'coconut'];
 fruits.sort();
 console.log(fruits);
@@ -362,7 +362,7 @@ console.log(fruits);
 
 # Math Object Important Properties & methods
 
-```javascript
+```js
 console.log(Math.random()); // generate random number between [0 , 1)
 
 let arr = [1,2,3,34,6,56,4,3];
@@ -403,10 +403,10 @@ console.log(Math.LOG10E); // value of log 10 base e
 // Output => 0.4342944819032518
 ```
 
-> # Higher Order Functions & Callback Functions
+# Higher Order Functions & Callback Functions
 
 > ### for (of) vs ForEach()
-```javascript
+```js
 const arr = [1, 2, 3, 4, 5, 6, 7];
 // forEach function
 arr.forEach(el => {
@@ -446,7 +446,7 @@ for (el of arrClass){
 
 
 > ### setTimeout()
-```javascript
+```js
 setTimeout(() => {
     console.log('too kaise hai aap log.');
 },2000);    // execute after 2 sec
@@ -457,7 +457,7 @@ console.log('Hello guies,');
 ```
 
 > ### setTnterval() & clearInterval()
-```javascript
+```js
 let id = setInterval(() => {    // continuously executing until we stoped using clearInterval(id)
     console.log('too kaise hai aap log.');
 },1000);    // 1sec interval
@@ -468,4 +468,39 @@ console.log('Hello guies');
 setTimeout(() => {
     clearInterval(id);  // terminate setInterval()
 },4000);    // execute after 4 sec
+```
+
+> ### map() vs filter()
+```js
+const arr = [1,2,3,4,5,6,7];
+
+const newArr1 = arr.map((el) => {
+    return el*2;
+});
+console.log(newArr1);
+// Output => [ 2,  4,  6, 8, 10, 12, 14 ]
+
+const newArr2 = arr.filter((el) => (el % 2 == 0));
+console.log(newArr2);
+// Output => [ 2, 4, 6 ]
+```
+
+> ### every() vs some()
+```js
+let arr = [2, 4, 6, 8];
+console.log(arr.every((el) => (el % 2 == 0)));
+// OutPut => true
+
+let arr1 = [...arr, 1];
+console.log(arr1.every((el) => (el % 2 == 0)));
+// Output => false
+
+
+let arr2 = [2, 3, 4, 8];
+console.log(arr2.some((el) => (el % 3 == 0)));
+// OutPut => true
+
+let arr3 = [1, 2, 4, 5, 7];
+console.log(arr3.some((el) => (el % 3 == 0)));
+// OutPut => false
 ```
