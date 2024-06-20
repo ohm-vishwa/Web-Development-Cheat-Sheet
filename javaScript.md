@@ -38,7 +38,7 @@
 > 
 > these cases are same with ` object `.
 
-> ### ` ... ` Spread
+> ### Spread Operator ` ... ` 
 ```js
 const arr1 = [1, 2, 3];
 const arr2 = [...arr1, 4, 5, 6];    // Spreading an Array
@@ -102,6 +102,38 @@ const obj = {
 };
 console.log(obj.getValue()); // 42
 console.log(obj.getValue2()); // undefined
+```
+
+> ### Destructuring Array
+```js
+let names = ["Ohm", "Abhishek", "Asif", "jay prakash"];
+// let student1 = names[0];
+// let student2 = names[1];
+// let student3 = names[2];
+// let student4 = names[3];
+let [student1, student2, student3, student4] = names;
+    console.log(student2);
+// Output => Abhishek
+```
+
+> ### Destructuring Object
+```js
+const student = {
+    name: "Priyanka",
+    age : 12,
+    class : 4,
+    subjects: ["maths", "science", "english", "hindi"],
+    username: "@priyanka1513",
+    password: "abcd"
+}
+let {username, password} = student;
+    console.log(username);
+// Output => @priyanka1513
+
+let { username: user, password: secret} = student;
+console.log(user);
+// Output => @priyanka1513
+
 ```
 
 > ### length
@@ -511,3 +543,5 @@ let finalValue = num.reduce((res,el) => { // (accumulator,element)
 console.log(finalValue);
 // Output => 10
 ```
+
+
