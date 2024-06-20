@@ -15,16 +15,7 @@
 ||                                                                                                    |[splice()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#splice)                ||
 ||                                                                                                    |[sort()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#sort)                    ||
 
-> [!IMPORTANT] 
-> ` const array = newArray; `\
-> we can't assign new array refrence to **array**. \
-> but, we can perform all Array operations inside it.
-> 
-> ` let array = newArray; ` \
-> it makes refrence of assigned array.\
-> change in one array reflect in both
-> 
-> these cases are same with ` object `.
+
 
 > ### Spread Operator ` ... ` 
 ```js
@@ -251,6 +242,17 @@ console.log(newStr);
 ---
 
 # Array Methods
+
+> [!IMPORTANT] 
+> ` const array = newArray; `\
+> we can't assign new array refrence to **array**. \
+> but, we can perform all Array operations inside it.
+> 
+> ` let array = newArray; ` \
+> it makes refrence of assigned array.\
+> change in one array reflect in both
+> 
+> these cases are same with ` object `.
 
 > ### push() ` add to end `
 ```js
