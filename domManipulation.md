@@ -1,19 +1,19 @@
 # DOM Manipulation
 <!-- > ## DOM manipulation in ` Browser Console ` -->
-> #### [!IMPORTANT] What is DOM
+> [!IMPORTANT] What is DOM
 > The DOM ` Document Object Model ` represents a document with a logical tree\
 > It allow us to maniplute/change webpage content ` HTML Elements `
 
 
 ## Properties
 
-> #### [!TIP] innerText
+> [!TIP] innerText
 > Shows the visible text contained in a node
  
-> #### [!TIP] innerHTML
+> [!TIP] innerHTML
 > Shows the full markup
  
-> #### [!TIP] textContent
+> [!TIP] textContent
 > Shows the full text
  
 
