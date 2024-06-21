@@ -30,6 +30,13 @@
 
 ## [DOM Mainpulation](/domManipulation.md)
 
+|DOM mainpulation|
+|----------------|
+|[properties](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#properties)|
+|[Element Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#element-mainpulation)|
+|[Attribute Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#attribute-manipulation)|
+|[style Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#style-manipulation)|
+|[classList Property](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#classlist)|
 
 
 
