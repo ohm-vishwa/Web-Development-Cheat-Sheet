@@ -8,7 +8,7 @@
 |[Destructuring Object](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#destructuring-object)                       |[slice()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#slice)             |[shift](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#shift-delete-from-front)  |[Math.abs()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathabs)           |[map() vs filter()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#map-vs-filter)                           |
 |[length](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#length)                                                   |[replace()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#replace)         |[indexOf()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#indexof-1)            |[Math.pow()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathpow)           |[every() vs some()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#every-vs-some)                           |
 |[try & catch](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#try--catch)                                          |[repeat()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#repeat)           |[include()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#includes)             |[Math.sqrt()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathsqrt)         |[reduce()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#reduce)                                           |
-|[Arrow func vs Regular func](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#arrow-function----vs-regular-function)|                                                                                                    |[concat()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#concat)                |[Math.cbrt()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathcbrt)         |[]()|
+|[Arrow func vs Regular func](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#arrow-function----vs-regular-function)|[toString()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#tostring)                                                                                                    |[concat()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#concat)                |[Math.cbrt()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathcbrt)         |[]()|
 |[]()|                                                                                                                                                                                                                                          |[reverse()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#reverse)              |[Math.floor()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathfloor)       |[]()|
 |[]()|                                                                                                                                                                                                                                          |[slice()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#slice-1)                |[Math.celi()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathceli)         ||
 |[]()|                                                                                                                                                                                                                                          |[splice()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#splice)                |[Math.PI](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathpi)               ||
@@ -241,6 +241,17 @@ console.log(newStr);
 // Output => HelloHelloHello
 ```
 
+> ### toString()
+```js
+let num = 123;
+let str = num.toString();
+console.log(str); // "123"
+console.log(typeof str); // "string"
+
+let arr = [1, 2, 3];
+let strArr = arr.toString();
+console.log(strArr); // "1,2,3"
+console.log(typeof strArr); // "string"
 ---
 
 # Array Methods

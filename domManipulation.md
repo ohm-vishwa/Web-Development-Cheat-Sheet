@@ -1,4 +1,15 @@
 # DOM Manipulation
+
+|DOM mainpulation|
+|----------------|
+|[properties]()|
+|[Element Manipulation]()|
+|[Attribute Manipulation]()|
+|[style Manipulation]()|
+|[classList Property]()|
+|[]()|
+
+
 <!-- > ## DOM manipulation in ` Browser Console ` -->
 > [!IMPORTANT]
 > 
@@ -7,21 +18,24 @@
 
 
 ## Properties
+> [!NOTE]
+> **innerText** --> visible text contained in a node\
+> **innerHTML** --> full markup\
+> **textContent** --> full text ` hidden also `
 
-**innerText**
-> Shows the visible text contained in a node
+> ### innerText & innerHTML
+```js
+let home = document.querySelector('div');
+home.innerHTML = ('<h1> Heading </h1>'); // insert HTML
 
- **innerHTML**
-> Shows the full markup
+let heading = document.querySelector('h1');
+heading.innerText = "Ohm vishwa"; // Change Text
+```
 
- **textContent**
-> Shows the full text
- 
-
-## Methods
+## Element Mainpulation
 
 > [!WARNING]
-> These Commands works Only in ` Browser Console `
+> Use Browser Console
 
 > ### View Global Object
 ```js
@@ -58,4 +72,57 @@ document.querySelector('.myClass') // select first element with class = "myClass
 document.querySelectorAll('p') // select all p elements
 ```
 
+## Attribute Manipulation
 
+> ### getAttribute()
+```js
+// <h1 id = "myId" >Ohm Vishwa</h1>
+
+let heading = document.querySelector('h1');
+    console.log(heading.getAttribute('id'));
+// Output => myId
+```
+
+> ### setAttribute()
+```js
+// <h1 id = "myId" >Ohm Vishwa</h1>
+
+heading.setAttribute('class', 'myClass');
+
+// now =>  <h1 class="myClass" id="myId" >Ohm Vishwa</h1>
+```
+
+## style Manipulation
+```js
+// <h1 id = "myId" >Ohm Vishwa</h1>
+let heading = document.querySelector('h1');
+heading.style.color = "red"; // now h1 tag text are red
+```
+> [!CAUTION]
+> it can mainpulate ` inline CSS ` only.
+
+> ### classList 
+```js
+/* .green {
+    color: green;
+}
+.background {
+    background-color: purple;
+}
+.blue {
+    color: blue;
+} */
+
+/* <h1 id="myId">Ohm Vishwa</h1> */
+
+let heading = document.getElementById('myId');
+    heading.classList.add("green");
+    heading.classList.replace("green","blue")
+    heading.classList.add("background");
+    heading.classList.remove("blue",);
+    heading.classList.contains("background") // true
+
+    // toggle => if arg is present then, remove (vise vesa)
+    heading.classList.toggle("background") // flase
+    heading.classList.toggle("background") // true
+```
