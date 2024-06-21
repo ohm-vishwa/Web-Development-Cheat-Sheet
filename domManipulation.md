@@ -6,8 +6,9 @@
 |[Element Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#element-mainpulation)|
 |[Attribute Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#attribute-manipulation)|
 |[style Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#style-manipulation)|
-|[classList Property](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#classlist)|
-|[]()|
+|[Navigation]()|
+|[Adding Element]()|
+|[Remove Element]()|
 
 
 <!-- > ## DOM manipulation in ` Browser Console ` -->
@@ -125,4 +126,108 @@ let heading = document.getElementById('myId');
     // toggle => if arg is present then, remove (vise vesa)
     heading.classList.toggle("background") // flase
     heading.classList.toggle("background") // true
+```
+> ### Navigation
+```js
+/* <div>
+        <h1 id="myId">Heading</h1>
+    </div>
+    <ul>
+        <li>Item-1</li>
+        <li>Item-2</li>
+        <li>Item-3</li>
+    </ul> */
+let h1 = document.querySelector('h1');
+h1.parentElement // <div>...</div>
+
+let div = document.querySelector('div');
+div.children // <h1>Heading</h1>
+div.childElementCount // 1
+
+let ul = document.querySelector(ul);
+ul.children[0]; // Item-1
+```
+
+> ### Adding Elements
+```js
+let div = document.querySelector('div');
+
+let u = document.createElement('u');
+u.innerText = "underline";
+div.appendChild(u); // insert as child element at bottom
+
+let p1 = document.createElement('p');
+p1.innerText = "bottom"
+div.append(p1); // insert at bottom
+
+let p2 = document.createElement('p');
+p2.innerText = "top";
+div.prepend(p2); // insert at top
+
+let btn = document.createElement('button');
+btn.innerText = "Button"
+div.insertAdjacentElement('beforebegin',btn); // (where,element)
+// div.insertAdjacentElement('beforeend',btn);
+// div.insertAdjacentElement('afterbegin',btn);
+// div.insertAdjacentElement('afterend',btn);
+```
+
+> ### Remove Element
+```js
+/* <div>
+<h1 id="myId">Heading</h1>
+</div> */
+
+let div = document.querySelector('div');
+// let h1 = document.querySelector(h1);
+let h1 = document.querySelector('h1');
+
+// div.removeChild(h1);
+div.remove();
+```
+
+---
+
+# DOM Events
+> [!NOTE]
+> Events are signal that something has occurred. (user input / action)
+
+> ### onclick
+
+```js
+let button = document.querySelector('button');
+
+let sayHello = () => {
+    alert('Hello');
+}
+
+button.onclick = () => {
+    alert("hello world");
+};
+
+let btns = document.querySelectorAll('button');
+
+for (btn of btns){
+    btn.onclick = sayHello; // () not bacause we don't to execute currently.
+}
+```
+> [!NOTE]
+> ` onclick ` event multiple function execution is not possible
+
+> ### addEventListener
+```js
+let sayHello = () => {
+    alert('Hello');
+}
+let sayName = () => {
+    alert('ohm');
+}
+let button = document.querySelectorAll('button'); 
+
+// let btns = document.querySelectorAll('button');
+for (btn of button){
+    btn.addEventListener('click',sayHello);
+    btn.addEventListener('dblclick' ,sayName);
+    // btn.onclick = sayHello; // () not bacause we don't to execute currently.
+}
 ```

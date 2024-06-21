@@ -28,7 +28,8 @@
 |[]()|                                                                                                                                                                                                                                          ||[Math.LOG2E](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathlog2e)          ||
 |[]()|                                                                                                                                                                                                                                          ||[Math.LOG10E](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathlog10e)        ||
 
-## [DOM Mainpulation](/domManipulation.md)
+- ## [DOM Refrence](https://developer.mozilla.org/en-US/docs/Web/API/Element)
+- ## [DOM Mainpulation](/domManipulation.md)
 
 |DOM mainpulation|
 |----------------|
@@ -36,9 +37,8 @@
 |[Element Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#element-mainpulation)|
 |[Attribute Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#attribute-manipulation)|
 |[style Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#style-manipulation)|
-|[classList Property](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#classlist)|
 
-
+- ## [Node.js](./nodejs.md)
 
 ---
 
