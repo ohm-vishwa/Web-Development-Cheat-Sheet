@@ -28,15 +28,18 @@
 |[]()|                                                                                                                                                                                                                                          ||[Math.LOG2E](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathlog2e)          ||
 |[]()|                                                                                                                                                                                                                                          ||[Math.LOG10E](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathlog10e)        ||
 
-- ## [DOM Refrence](https://developer.mozilla.org/en-US/docs/Web/API/Element)
-- ## [DOM Mainpulation](/domManipulation.md)
+- ## [DOM Mainpulation](/domManipulation.md) || [DOM Refrence](https://developer.mozilla.org/en-US/docs/Web/API/Element)
 
-|DOM mainpulation|
-|----------------|
-|[properties](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#properties)|
-|[Element Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#element-mainpulation)|
-|[Attribute Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#attribute-manipulation)|
-|[style Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#style-manipulation)|
+|DOM mainpulation| DOM Events |
+|----------------| ---------- |
+|[properties](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#properties)                        |[onclick](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#onclick)|
+|[Element Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#element-mainpulation)    |[addEventListener](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#addeventlistener)|
+|[Attribute Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#attribute-manipulation)|[]()|
+|[style Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#style-manipulation)        |[]()|
+|[Navigation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#navigation)                        |[]()|
+|[Adding Element](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#adding-elements)               |[]()|
+|[Remove Element](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#remove-element)                |[]()|
+
 
 - ## [Node.js](./nodejs.md)
 
