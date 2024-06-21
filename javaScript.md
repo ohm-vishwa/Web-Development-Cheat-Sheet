@@ -1,7 +1,7 @@
 # Javascript Important Terms , Methods & more
 
 | Terms  | String Methods | Array Methods | Math Object | Higher Order Functions |
-| -----  | -------------- | ------------- | ----------- | ---------------------- |
+| -----  | -------------- | ------------- | ----------- | -------|
 |[Spread Operator ` ... `](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#spread-operator-)                        |[trim()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#trim)               |[push()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#push-add-to-end)         |[Math.random()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathrandom)     |[for(of) vs forEach()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#for-of-vs-foreach)                    |
 |[` this ` keyword ](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#this-keyword)                                  |[toUpperCase()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#tolowercase) |[pop()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#pop-delete-from-end)      |[Math.max()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathmax)           |[setTimeout()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#settimeout)                                   |
 |[Destructuring Array](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#destructuring-array)                         |[indexOf()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#indexof)         |[unshift()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#unshift-add-to-front) |[Math.min()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathmin)           |[setInterval() & clearInterval()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#settnterval--clearinterval)|
@@ -15,8 +15,8 @@
 |[]()|                                                                                                                                                                                                                                          |[sort()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#sort)                    |[Math.log2()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathlog2)         ||
 |[]()|                                                                                                                                                                                                                                          ||[Math.LOG2E](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathlog2e)          ||
 |[]()|                                                                                                                                                                                                                                          ||[Math.LOG10E](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathlog10e)        ||
-|[]()|||||
 
+# [DOM Mainpulation](/domManipulation.md)
 
 # Terms
 > ### Spread Operator ` ... ` 
@@ -561,8 +561,3 @@ let finalValue = num.reduce((res,el) => { // (accumulator,element)
 console.log(finalValue);
 // Output => 10
 ```
-
-# DOM ` Document Object Model `
-> [!NOTE]
-> The DOM represents a document with a logical tree\
-> It allow us to maniplute/change webpage content ` HTML Elements `
