@@ -14,7 +14,7 @@
  **innerHTML**
 > Shows the full markup
 
- **textConten**
+ **textContent**
 > Shows the full text
  
 
