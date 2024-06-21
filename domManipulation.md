@@ -8,14 +8,14 @@
 
 ## Properties
 
-> > **innerText**\
-> > Shows the visible text contained in a node
-> >
-> > **innerHTM**\
-> > Shows the full markup
-> >
-> > **textConten**\
-> > Shows the full text
+**innerText**
+> Shows the visible text contained in a node
+
+ **innerHTM**
+> Shows the full markup
+
+ **textConten**
+> Shows the full text
  
 
 ## Methods
