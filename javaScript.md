@@ -1,8 +1,8 @@
-# Javascript Important Terms & Methods
+# Javascript Important Terms , Methods & more
 
 | Terms  | String Methods | Array Methods | Higher Order Functions | Math Object |
 | -----  | -------------- | ------------- | ---------------------- | -----------
-||[trim()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#trim)               |[for( of )](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#for-of-)              |||
+||[` trim() `](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#trim)               |[for( of )](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#for-of-vs-foreach)              |||
 ||[toUpperCase()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#tolowercase) |[push()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#push-add-to-end)         |||
 ||[indexOf()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#indexof)         |[pop()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#pop-delete-from-end)      |||
 ||[slice()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#slice)             |[unshift()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#unshift-add-to-front) |||
@@ -377,68 +377,69 @@ console.log(fruits);
 ```
 
 ## Math Object Important Properties & methods
-> Math.random()
+
+> #### Math.random()
 ```js
 console.log(Math.random()); 
 // generate random number between [0 , 1)
 ```
-> Math.max()
+> #### Math.max()
 ```js
 let arr = [1,2,3,34,6,56,4,3];
 console.log(Math.max(...arr)); //reutrn largest number
 // Output => 56
 ```
-> Math.min()
+> #### Math.min()
 ```js
 console.log(Math.min(2,1,3,2)); // return smallest number
 // Output => 1
 ```
-> Math.abs()
+> #### Math.abs()
 ```js
 console.log(Math.abs(-5.3)); // gives +ve value
 // Output => 5.3
 ```
-> Math.pow()
+> #### Math.pow()
 ```js
 console.log(Math.pow(2,3)); // power function
 // Output => 8
 ```
-> Math.sqrt()
+> #### Math.sqrt()
 ```js
 console.log(Math.sqrt(9)); // square root function
 // Output => 3
 ```
-> Math.cbrt()
+> #### Math.cbrt()
 ```js
 console.log(Math.cbrt(27)); // cube root
 // Output => 3
 ```
-> Math.floor()
+> #### Math.floor()
 ```js
 console.log(Math.floor(2.34)); // floor function
 // Output => 2
 ```
-> Math.celi()
+> #### Math.celi()
 ```js
 console.log(Math.ceil(3.2)); // ceiling function
 // Output => 4
 ```
-> Math.PI
+> #### Math.PI
 ```js
 console.log(Math.PI); // value of PI
 // Output => 3.141592653589793
 ```
-> Math.log2()
+> #### Math.log2()
 ```js
 console.log(Math.log2(34)); // log 2 base 2
 // Output => 5.087462841250339
 ```
-> Math.LOG2E
+> #### Math.LOG2E
 ```js
 console.log(Math.LOG2E); // value of log 2 base e
 // Output => 1.4426950408889634
 ```
-> Math.LOG10E
+> #### Math.LOG10E
 ```js
 console.log(Math.LOG10E); // value of log 10 base e
 // Output => 0.4342944819032518
@@ -559,4 +560,7 @@ console.log(finalValue);
 // Output => 10
 ```
 
-
+# DOM ` Document Object Model `
+> [!NOTE]
+> The DOM represents a document with a logical tree\
+> It allow us to maniplute/change webpage content ` HTML Elements `
