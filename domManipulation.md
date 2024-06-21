@@ -11,7 +11,7 @@
 **innerText**
 > Shows the visible text contained in a node
 
- **innerHTM**
+ **innerHTML**
 > Shows the full markup
 
  **textConten**
