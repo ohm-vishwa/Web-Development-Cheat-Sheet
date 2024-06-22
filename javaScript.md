@@ -26,24 +26,6 @@
 
 # Terms
 > ### Spread
-Stack
-CheatSheet
-Guide
-Reference
-Tutorial
-JavaScript
-MongoDB
-Express
-React
-Node
-WebDev
-Coding
-Backend
-Frontend
-Fullstack
-Development
-Programming
-QuickGuide
 Tips Operator ` ... ` 
 ```js
 const arr1 = [1, 2, 3];
