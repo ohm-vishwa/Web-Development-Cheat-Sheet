@@ -2,11 +2,11 @@
 
 |DOM mainpulation| DOM Events |
 |----------------| ---------- |
-|[properties](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#properties)                        |[onclick](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#onclick)|
+|[properties](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#properties)                        |[onclick](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#onclick-mouse-event)|
 |[Element Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#element-mainpulation)    |[addEventListener](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#addeventlistener)|
-|[Attribute Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#attribute-manipulation)|[]()|
-|[style Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#style-manipulation)        |[]()|
-|[Navigation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#navigation)                        |[]()|
+|[Attribute Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#attribute-manipulation)|[this with Event Listenser / Handler]()|
+|[style Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#style-manipulation)        |[Keyboard Events]()|
+|[Navigation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#navigation)                        |[Form Event]()|
 |[Adding Element](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#adding-elements)               |[]()|
 |[Remove Element](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#remove-element)                |[]()|
 
@@ -232,7 +232,7 @@ for (btn of button){
 }
 ```
 
-> ` this ` with Event Listenser / Handler
+> ### ` this ` with Event Listenser / Handler
 ```js
 let btn = document.querySelector('button');
 
