@@ -11,6 +11,13 @@
 |[Remove Element](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#remove-element)                |[]()|
 
 
+[javascript](./javaScript.md)\
+[node.js](./nodejs.md)\
+[react](./react.md)
+
+[Back to Home Page](./README.md)
+---
+
 <!-- > ## DOM manipulation in ` Browser Console ` -->
 > [!IMPORTANT]
 > 
