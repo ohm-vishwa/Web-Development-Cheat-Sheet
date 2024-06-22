@@ -12,6 +12,7 @@
   
 - ## [Javascript Important Terms, Methods & more](/javaScript.md)
 
+
 | Terms  | String Methods | Array Methods | Math Object | Higher Order Functions |
 | -----  | -------------- | ------------- | ----------- | -------|
 |[Spread Operator ` ... `](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#spread-operator-)                                                                |[trim()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#trim)                   |[push()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#push-add-to-end)         |[Math.random()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathrandom)     |[for(of) vs forEach()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#for-of-vs-foreach)                    |
@@ -26,7 +27,9 @@
 |[promise chaining](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#promise-chaining)                                                                       |                                                                                                        |[splice()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#splice)                |[Math.PI](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathpi)               |[]()|
 |[Promise result & error](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#promise-result--error)                                                            |                                                                                                        |[sort()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#sort)                    |[Math.log2()](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathlog2)         |[]()|
 |[Async & Await](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#async--await)                                                                              |                                                                                                        |                                                                                                         |[Math.LOG2E](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathlog2e)         |[]()|
-|[]()|   
+|[]()                                                                                                                                                                              |                                                                                                        |                                                                                                         |[Math.LOG10E](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/javaScript.md#mathlog10e)       |[]()|
+
+
 
 - ## [DOM Mainpulation](/domManipulation.md) || [DOM Refrence](https://developer.mozilla.org/en-US/docs/Web/API/Element)
 
