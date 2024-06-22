@@ -4,9 +4,9 @@
 |----------------| ---------- |
 |[properties](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#properties)                        |[onclick](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#onclick-mouse-event)|
 |[Element Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#element-mainpulation)    |[addEventListener](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#addeventlistener)|
-|[Attribute Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#attribute-manipulation)|[this with Event Listenser / Handler]()|
-|[style Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#style-manipulation)        |[Keyboard Events]()|
-|[Navigation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#navigation)                        |[Form Event]()|
+|[Attribute Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#attribute-manipulation)|[this with Event Listenser / Handler](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#this-with-event-listenser--handler)|
+|[style Manipulation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#style-manipulation)        |[Keyboard Events](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#keyboard-events)|
+|[Navigation](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#navigation)                        |[Form Event](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#form-event)|
 |[Adding Element](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#adding-elements)               |[]()|
 |[Remove Element](https://github.com/ohm-vishwa/MERN-Cheat-Sheet/blob/main/domManipulation.md#remove-element)                |[]()|
 
