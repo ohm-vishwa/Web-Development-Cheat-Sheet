@@ -127,10 +127,11 @@ console.log(arr.length);
 //Output => 4
 ```
 
-> ### try & catch
+> ### try , catch & throw 
 ```js
 try {
   // Code that may throw an exception
+  throw "some random error";
 } catch (error) {
   // Code to handle the exception
 } finally {
@@ -163,6 +164,86 @@ const square = x => x * x;
 
 const nestedFunction = x => y => x + y;
 ```
+
+> ### Promise()
+```js
+function savetoDb(data) {
+    return new Promise((resolve,reject) => {
+        let internetSpeed = Math.floor(Math.random()*10 + 1);
+        if (internetSpeed > 4){
+            resolve("resolved");
+        }
+        else{
+            reject("rejected");
+        }
+    })
+}
+```
+
+> ### then() & catch()
+```js
+savetoDb("ohm").then(() => {
+    console.log('sucess')
+}).catch(() => {
+    console.log('failed')
+})
+```
+
+> ### Promise Chaining
+```js
+savetoDb("jay").then(() => {
+    console.log('sucess')
+    return savetoDb('ohm');
+}).then(() => {
+    return savetoDb('abhishek');
+}).then(() => {
+    console.log('sucess');
+}).catch(() => {
+    console.log('failed')
+})
+```
+
+> ### promise result & error
+```js
+savetoDb("ohm").then((result) => {
+    console.log('sucess');
+    console.log(result);
+    return savetoDb('abc');
+}).catch((error) => {
+    console.log('failed')
+    console.log(error);
+})
+```
+
+> ### Async & Await
+```js
+function greet(){
+    setInterval(() => {
+        console.log('hello');
+    },1000)
+};
+let demo = async () => {
+    // by default it returns promise due to async keyword
+    await greet(); 
+    await greet(); // execute only after execution of one.
+    await greet(); 
+};
+
+async function greet() {
+    // returns promise
+};
+```
+
+
+
+
+
+
+
+
+
+
+
 
 # String Methods
 

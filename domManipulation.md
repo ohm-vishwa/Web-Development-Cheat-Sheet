@@ -192,7 +192,7 @@ div.remove();
 > [!NOTE]
 > Events are signal that something has occurred. (user input / action)
 
-> ### onclick
+> ### onclick ` Mouse Event `
 
 ```js
 let button = document.querySelector('button');
@@ -231,3 +231,44 @@ for (btn of button){
     // btn.onclick = sayHello; // () not bacause we don't to execute currently.
 }
 ```
+
+> ` this ` with Event Listenser / Handler
+```js
+let btn = document.querySelector('button');
+
+btn.addEventListener('click', function(){
+    this.style.backgroundColor = 'red';
+})
+```
+
+> ### Keyboard Events
+```js
+let input = document.querySelector('input');
+
+input.addEventListener('keydown', function(e){
+    console.log(e.key) // if a pressed then,
+    console.log(e.code) // code --> KeyA
+})
+```
+
+> ### Form Event
+```js
+let form = document.querySelector('form');
+
+form.addEventListener('submit',(event) => {
+    event.preventDefault(); // redirect is prevented now
+    let user = this.element[0];
+    let pass = this.element[1];
+});
+```
+
+> [!NOTE]
+> **change** event\
+> the change event occurs when the value of an element has been changed, works on ` <input> ` , ` <textarea> ` , ` <select> `
+>
+> **input** event\
+> the input event fires when the value of an ` <input> ` , ` <textarea> ` , ` <select> ` element has been changed.
+
+> [!IMPORTANT]
+> when we handle events for nested elements, parent's event can occurs.
+> to stop event bubbling ` stopPropagation() ` is used.
