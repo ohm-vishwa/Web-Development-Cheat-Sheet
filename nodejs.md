@@ -15,7 +15,7 @@
 > [!NOTE]
 > **Node.js** is not a language, library, or framework.
 
-> ## file execution via terimal
+> ## file execution via terminal
 ```js
 node <file.js>
 ```
