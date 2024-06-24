@@ -26,7 +26,7 @@
 
 # Terms
 > ### Spread
-Tips Operator ` ... ` 
+Spread Operator ` ... ` 
 ```js
 const arr1 = [1, 2, 3];
 const arr2 = [...arr1, 4, 5, 6];    // Spreading an Array
@@ -100,8 +100,7 @@ let names = ["Ohm", "Abhishek", "Asif", "jay prakash"];
 // let student3 = names[2];
 // let student4 = names[3];
 let [student1, student2, student3, student4] = names;
-    console.log(student2);
-// Output => Abhishek
+let [me, ...friends] = names; // me --> ohm , friends --> ["Abhishek", "Asif", "jay prakash"] 
 ```
 
 > ### Destructuring Object
